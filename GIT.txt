@@ -6,7 +6,7 @@ Branching is important. New work get on a branch.
 
 Setup a release branch. (May be master may be called released, doesn't matter). automate
 
-dont use fast forward merges.
+don't use fast forward merges.
 
 ~/.gitconfig stores configs for the way git runs in your machine
 
@@ -35,11 +35,11 @@ Keep it *clean*
 a branch = ticket
 
 ticket id should be in branch name but make it readable to USERS!
-dont squash dont fastforward, SAVE ALL THE HISTORY!
+don't squash don't fast-forward, SAVE ALL THE HISTORY!
 
 keep your git clean.commit should be one functional change.
 
-each commit must work becasue git-bisect
+each commit must work because git-bisect
 
 What is git-bisect:
 
@@ -47,19 +47,19 @@ git-bisect does binary search of commits and tells you where the break is.
 
 smaller >>> bigger
 
-watch the whitespase commits
+watch the white space commits
 
-cheackpoint commit: include notes so you know what is going on. WIP = work in progress
+cheack-point commit: include notes so you know what is going on. WIP = work in progress
 git add --patch or git add -p
 
 magit
 
-dont push first draft!
-git rebase -i changes local history. [intermediate]
+don't push first draft!
+git re-base -i changes local history. [intermediate]
 
-funny source code commments "now only god knows".
+funny source code comments "now only god knows".
 
-git config --loacal commit.template ./.template
+git config --local commit.template ./.template
 
 edit .template to what you want.
 
