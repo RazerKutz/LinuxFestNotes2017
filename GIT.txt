@@ -1,0 +1,101 @@
+Logs are magic!
+
+Destroying data is needless. No linear commit history. Its not making things simpler.
+
+Branching is important. New work get on a branch.
+
+Setup a release branch. (May be master may be called released, doesn't matter). automate
+
+dont use fast forward merges.
+
+~/.gitconfig stores configs for the way git runs in your machine
+
+EDIT THESE!!!
+git config --global merge.ff false
+git config --global pull.ff only
+
+[merge]
+  ff = false
+[pull]
+  ff = false
+
+Goal is to have MAX history!
+
+Keep it *clean*
+
+[alias]
+    br = branch (Example)
+    nuke = push origin <branch>
+    prune = remote prune origin
+
+  git push origin --delete <branch>
+
+  unmerged = git branch --no-merge master
+
+a branch = ticket
+
+ticket id should be in branch name but make it readable to USERS!
+dont squash dont fastforward, SAVE ALL THE HISTORY!
+
+keep your git clean.commit should be one functional change.
+
+each commit must work becasue git-bisect
+
+What is git-bisect:
+
+git-bisect does binary search of commits and tells you where the break is.
+
+smaller >>> bigger
+
+watch the whitespase commits
+
+cheackpoint commit: include notes so you know what is going on. WIP = work in progress
+git add --patch or git add -p
+
+magit
+
+dont push first draft!
+git rebase -i changes local history. [intermediate]
+
+funny source code commments "now only god knows".
+
+git config --loacal commit.template ./.template
+
+edit .template to what you want.
+
+1 commit === 1 change!
+
+when in doubt make a commit!
+
+USE cheackpoints
+
+USING HISTORY BETTER:
+
+color support!
+
+[color]
+  branch = auto
+  blabla = auto
+  all = auto
+
+git blame
+
+git tblame -w (Ignore the witespace) -M (does a better job at letting you know the repeades or new blocks)
+
+git log -S <string> (look up and is known as the pickaxe)
+
+git log --follow
+
+git lg
+
+git log --graph --abbrev-commit --date-relative '--pretty=formate '%Cred%h%crest-%C(yellow) (Ask for slides!)
+
+Takeaways:
+
+History is important and you should spend some more time to make sure you have a good project history.
+
+both creating it ans changing it.
+
+Its not finished when it just works.
+
+Be kind and make good commits. Software dev is tough.
