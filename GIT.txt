@@ -10,7 +10,7 @@ don't use fast forward merges.
 
 ~/.gitconfig stores configs for the way git runs in your machine
 
-EDIT THESE!!!
+EDIT THESE!
 git config --global merge.ff false
 git config --global pull.ff only
 
